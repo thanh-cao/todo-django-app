@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <h1>Add item</h1>
-    <form action="/add" method="post">
+    <h1>Edit item</h1>
+    <form action="/edit/{{ item.id }}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Add item">
+        <input type="submit" value="Update item">
     </form>
 
 </body>
