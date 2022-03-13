@@ -18,6 +18,7 @@
             <td>{{ item.name }}</td>
             {% endif %}
             <td>
+                <a href="/toggle/{{ item.id }}">Toggle</a>
                 <a href="/edit/{{ item.id }}">Edit</a>
                 <a href="/delete/{{ item.id }}">Delete</a>
             </td>
